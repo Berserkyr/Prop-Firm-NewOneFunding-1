@@ -27,3 +27,17 @@ function startCountdown(targetDate) {
 
 const launchDate = new Date('2025-03-01T00:00:00').getTime();
 startCountdown(launchDate);
+
+// Mobile menu toggle
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    document.getElementById('nav-menu').classList.toggle('visible');
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', function(event) {
+    const nav = document.querySelector('nav');
+    const menu = document.getElementById('nav-menu');
+    if (!nav.contains(event.target) && menu.classList.contains('visible')) {
+        menu.classList.remove('visible');
+    }
+});
