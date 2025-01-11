@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NewOneFunding - La première Prop Firm française</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            background-color: #0a0a23;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav {
+            background-color: #1e1e2f;
+        }
+        nav ul li a {
+            color: #ffffff;
+        }
+        h2, h3 {
+            color: #ff6f61;
+        }
+        button {
+            background-color: #ff6f61;
+            color: #ffffff;
+        }
+        footer small a {
+            color: #ff6f61;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>NewOneFunding</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#concept">Concept</a></li>
+            <li><a href="#avantages">Avantages</a></li>
+            <li><a href="#contact" role="button">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>NewOneFunding</h2>
+                    <h3>La première Prop Firm dédiée aux traders francophones</h3>
+                </hgroup>
+                <p>NewOneFunding est la première Prop Firm française qui met son capital à disposition des traders francophones pour opérer sur les marchés financiers, partageant ainsi les gains générés.</p>
+                <h3>Qu'est-ce qu'une Prop Firm ?</h3>
+                <p>Une Prop Firm est une entreprise qui fournit son capital à des traders approuvés, leur permettant de trader sans utiliser leurs propres fonds. NewOneFunding se démarque en facilitant l'accès et en apportant une expertise locale.</p>
+                <h3>Pourquoi choisir NewOneFunding ?</h3>
+                <p>Avec un siège en France, des paiements locaux et une clarté fiscale, nous proposons une solution unique et adaptée aux traders francophones. Grâce à notre école de trading Xeilos, nous disposons déjà d'une base solide de traders qualifiés prêts à relever le défi.</p>
+            </section>
+        </div>
+    </main>
+
+    <section aria-label="Inscription">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Intéressé par notre Prop Firm ?</h2>
+                    <h3>Rejoignez-nous dès maintenant</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="firstname" name="firstname" placeholder="Votre nom" aria-label="Nom" required>
+                    <input type="email" id="email" name="email" placeholder="Votre email" aria-label="Email" required>
+                    <button type="submit" onclick="event.preventDefault()">Envoyer</button>
+                </form>
+            </article>
+        </div>
+    </section>
+
+    <footer class="container">
+        <small><a href="#concept">Concept</a> • <a href="#avantages">Avantages</a> • <a href="#contact">Contact</a></small>
+    </footer>
+</body>
+</html>

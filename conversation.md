@@ -1,0 +1,1 @@
+Création d'une nouvelle version du site NewOneFunding avec un design professionnel correspondant au branding observé dans le PDF. Mise en production rapide avec Replit.
