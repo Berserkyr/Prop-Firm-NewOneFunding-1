@@ -1,80 +1,127 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>NewOneFunding - La première Prop Firm française</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <style>
-        body {
-            background-color: #0a0a23;
-            color: #ffffff;
-            font-family: 'Poppins', sans-serif;
-        }
-        nav {
-            background-color: #1e1e2f;
-        }
-        nav ul li a {
-            color: #ffffff;
-        }
-        h2, h3 {
-            color: #ff6f61;
-        }
-        button {
-            background-color: #ff6f61;
-            color: #ffffff;
-        }
-        footer small a {
-            color: #ff6f61;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
     <nav class="container-fluid">
-        <ul>
-            <li><strong>NewOneFunding</strong></li>
+        <ul class="logo-section">
+            <li><img src="Logos NewOne Funding-20250111T163743Z-001/Logos NewOne Funding/texte blanc + cercle trans.png"
+                    alt="NewOneFunding Logo" class="logo"></li>
         </ul>
-        <ul>
+        <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links" id="nav-menu">
             <li><a href="#concept">Concept</a></li>
             <li><a href="#avantages">Avantages</a></li>
             <li><a href="#contact" role="button">Contact</a></li>
         </ul>
     </nav>
 
+    <!-- 🌟 Header dynamique avec annonce -->
+    <header class="header">
+        <!-- 🌟 Annonce percutante -->
+        <div class="announcement">
+            <h1>Rejoignez la Révolution du Trading avec NewOneFunding</h1>
+            <p>La première Prop Firm française dédiée aux traders francophones. Plus besoin de capital personnel, nous
+                investissons dans votre talent !</p>
+            <a href="#inscription" class="cta-button">Rejoignez-nous maintenant</a>
+        </div>
+
+        <!-- 🌟 Minuteur de lancement -->
+        <div id="countdown-timer" class="countdown">
+            <div>
+                <span id="days">00</span>
+                <p>Jours</p>
+            </div>
+            <div>
+                <span id="hours">00</span>
+                <p>Heures</p>
+            </div>
+            <div>
+                <span id="minutes">00</span>
+                <p>Minutes</p>
+            </div>
+            <div>
+                <span id="seconds">00</span>
+                <p>Secondes</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 🌟 Section principale -->
     <main class="container">
         <div class="grid">
             <section>
                 <hgroup>
-                    <h2>NewOneFunding</h2>
-                    <h3>La première Prop Firm dédiée aux traders francophones</h3>
+                    <h2>La première Prop Firm dédiée aux traders francophones</h2>
+                    <h3>Une solution unique pour les traders francophones.</h3>
                 </hgroup>
-                <p>NewOneFunding est la première Prop Firm française qui met son capital à disposition des traders francophones pour opérer sur les marchés financiers, partageant ainsi les gains générés.</p>
+                <p>NewOneFunding est la première Prop Firm française qui met son capital à disposition des traders
+                    francophones pour opérer sur les marchés financiers, partageant ainsi les gains générés.</p>
                 <h3>Qu'est-ce qu'une Prop Firm ?</h3>
-                <p>Une Prop Firm est une entreprise qui fournit son capital à des traders approuvés, leur permettant de trader sans utiliser leurs propres fonds. NewOneFunding se démarque en facilitant l'accès et en apportant une expertise locale.</p>
+                <p>Une Prop Firm est une entreprise qui fournit son capital à des traders approuvés, leur permettant de
+                    trader sans utiliser leurs propres fonds. NewOneFunding se démarque en facilitant l'accès et en
+                    apportant une expertise locale.</p>
                 <h3>Pourquoi choisir NewOneFunding ?</h3>
-                <p>Avec un siège en France, des paiements locaux et une clarté fiscale, nous proposons une solution unique et adaptée aux traders francophones. Grâce à notre école de trading Xeilos, nous disposons déjà d'une base solide de traders qualifiés prêts à relever le défi.</p>
+                <p>Avec un siège en France, des paiements locaux et une clarté fiscale, nous proposons une solution
+                    unique et adaptée aux traders francophones.</p>
             </section>
         </div>
     </main>
 
-    <section aria-label="Inscription">
-        <div class="container">
-            <article>
-                <hgroup>
-                    <h2>Intéressé par notre Prop Firm ?</h2>
-                    <h3>Rejoignez-nous dès maintenant</h3>
-                </hgroup>
-                <form class="grid">
-                    <input type="text" id="firstname" name="firstname" placeholder="Votre nom" aria-label="Nom" required>
-                    <input type="email" id="email" name="email" placeholder="Votre email" aria-label="Email" required>
-                    <button type="submit" onclick="event.preventDefault()">Envoyer</button>
-                </form>
-            </article>
-        </div>
-    </section>
+    <!-- 🌟 Footer -->
+    <footer class="footer">
+        <div class="grid">
+            <!-- Colonne 1 : Description -->
+            <div>
+                <h4>NewOneFunding</h4>
+                <p>La première Prop Firm française dédiée aux traders francophones.</p>
+            </div>
 
-    <footer class="container">
-        <small><a href="#concept">Concept</a> • <a href="#avantages">Avantages</a> • <a href="#contact">Contact</a></small>
+            <!-- Colonne 2 : Liens rapides -->
+            <div>
+                <h4>Liens rapides</h4>
+                <ul>
+                    <li><a href="#concept">Concept</a></li>
+                    <li><a href="#avantages">Avantages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#inscription">Inscription</a></li>
+                </ul>
+            </div>
+
+            <!-- Colonne 3 : Contact -->
+            <div>
+                <h4>Contact</h4>
+                <p>Email : <a href="mailto:contact@newonefunding.com">contact@newonefunding.com</a></p>
+                <p>Téléphone : +33 1 23 45 67 89</p>
+            </div>
+
+            <!-- Colonne 4 : Réseaux sociaux -->
+            <div class="social-icons">
+                <h4>Suivez-nous</h4>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- Section Copyright -->
+        <div class="copyright">
+            <p>&copy; 2025 NewOneFunding. Tous droits réservés. <a href="#">Mentions légales</a></p>
+        </div>
     </footer>
+
+    <!-- 🌟 Scripts -->
+    <script src="script.js"></script>
 </body>
+
 </html>
