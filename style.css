@@ -316,6 +316,18 @@ footer a:hover {
     max-height: 70px;
   }
 
+  #menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative; /* Nécessaire pour utiliser 'left' */
+    right: -150px  /* Ajustez selon vos besoins */
+}
+
+
   .announcement h1 {
     font-size: 2rem;
   }
