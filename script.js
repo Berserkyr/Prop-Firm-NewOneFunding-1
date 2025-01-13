@@ -41,3 +41,27 @@ document.addEventListener('click', function(event) {
         menu.classList.remove('visible');
     }
 });
+const ctx = document.getElementById('tradingChart').getContext('2d');
+const tradingChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+        datasets: [{
+            label: 'Performance',
+            data: [12, 19, 3, 5, 2, 3],
+            borderColor: '#ff6f61',
+            borderWidth: 2,
+            fill: false,
+        }]
+    },
+    options: {
+        scales: {
+            x: {
+                display: true,
+            },
+            y: {
+                display: true,
+            }
+        }
+    }
+});
