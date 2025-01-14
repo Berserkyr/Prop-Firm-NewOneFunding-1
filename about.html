@@ -12,72 +12,108 @@
 </head>
 
 <body>
-    <!-- Navbar identique à celle de la page d'accueil -->
-    <nav class="container-fluid">
-        <ul class="logo-section">
-            <li><img src="Logos NewOne Funding-20250111T163743Z-001/Logos NewOne Funding/texte blanc + cercle trans.png"
-                     alt="NewOneFunding Logo" class="logo"></li>
-        </ul>
-        <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
-        <ul class="nav-links" id="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Concept</a></li>
-            <li><a href="services.html">Avantages</a></li>
-            <li><a href="contact-page.php" role="button">Contact</a></li>
-        </ul>
-    </nav>
+<!-- Navbar identique à celle de la page d'accueil -->
+<nav class="container-fluid">
+    <ul class="logo-section">
+        <li><img src="Logos NewOne Funding-20250111T163743Z-001/Logos NewOne Funding/texte blanc + cercle trans.png"
+                 alt="NewOneFunding Logo" class="logo"></li>
+    </ul>
+    <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links" id="nav-menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="about.html">Concept</a></li>
+        <li><a href="services.html">Avantages</a></li>
+        <li><a href="contact-page.php" role="button">Contact</a></li>
+    </ul>
+</nav>
 
-    <!-- Header dynamique -->
-    <header class="header">
-        <h1>Notre Concept</h1>
-    </header>
+<!-- Header dynamique -->
+<header class="header">
+    <h1>Notre Concept</h1>
+</header>
 
-    <!-- Main Content -->
-    <main class="container">
+<!-- Main Content -->
+<main class="container">
+    <!-- Section "Découvrez NewOneFunding" avec une image -->
+    <section id="concept">
         <h2>Découvrez NewOneFunding</h2>
+        <img src="Logos%20NewOne%20Funding-20250111T163743Z-001/Logos%20NewOne%20Funding/loup%20petit%20trans.png" alt="Illustration de trading" class="concept-image">
         <p>NewOneFunding est une Prop Firm française dédiée aux traders francophones, proposant une solution unique
             permettant aux traders de travailler avec notre capital sans risque personnel.</p>
+    </section>
+
+    <!-- Section "Notre mission" -->
+    <section id="mission">
         <h3>Notre mission</h3>
         <p>Accompagner les traders francophones dans leur réussite sur les marchés financiers tout en leur offrant un
             environnement local et adapté.</p>
-        <h3>Pourquoi nous choisir ?</h3>
-        <p>Avec une présence locale, des paiements simplifiés et une gestion transparente, NewOneFunding offre une
-            solution pratique et sécurisée.</p>
-    </main>
+    </section>
 
-    <!-- Footer identique à celui de la page d'accueil -->
-    <footer class="footer">
-        <div class="grid">
-            <div>
-                <h4>NewOneFunding</h4>
-                <p>La première Prop Firm française dédiée aux traders francophones.</p>
+    <!-- Section "Pourquoi nous choisir ?" avec des icônes -->
+    <section id="choisir">
+        <h3>Pourquoi nous choisir ?</h3>
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Sécurité</h4>
+                <p>Une plateforme sécurisée pour protéger vos données et vos fonds.</p>
             </div>
-            <div>
-                <h4>Liens rapides</h4>
-                <ul>
-                    <li><a href="about.html">Concept</a></li>
-                    <li><a href="services.html">Avantages</a></li>
-                    <li><a href="contact-page.php">Contact</a></li>
-                    <li><a href="#">Inscription</a></li>
-                </ul>
+            <div class="feature-item">
+                <i class="fas fa-chart-line"></i>
+                <h4>Performance</h4>
+                <p>Accédez à des outils performants pour maximiser vos opportunités.</p>
             </div>
-            <div>
-                <h4>Contact</h4>
-                <p>Email : <a href="mailto:contact@newonefunding.com">contact@newonefunding.com</a></p>
-                <p>Téléphone : +33 1 23 45 67 89</p>
-            </div>
-            <div class="social-icons">
-                <h4>Suivez-nous</h4>
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <div class="feature-item">
+                <i class="fas fa-users"></i>
+                <h4>Support</h4>
+                <p>Une équipe dédiée pour vous accompagner à chaque étape.</p>
             </div>
         </div>
-        <div class="copyright">
-            <p>&copy; 2025 NewOneFunding. Tous droits réservés. <a href="#">Mentions légales</a></p>
+    </section>
+
+    <!-- Section "Appel à l'action" -->
+    <section id="cta">
+        <div class="cta">
+            <h3>Rejoignez NewOneFunding aujourd'hui</h3>
+            <p>Accédez à des opportunités de trading uniques et maximisez votre potentiel.</p>
+            <a href="contact-page.php" class="cta-button">Contactez nous maintenant</a>
         </div>
-    </footer>
+    </section>
+</main>
+
+<!-- Footer identique à celui de la page d'accueil -->
+<footer class="footer">
+    <div class="grid">
+        <div>
+            <h4>NewOneFunding</h4>
+            <p>La première Prop Firm française dédiée aux traders francophones.</p>
+        </div>
+        <div>
+            <h4>Liens rapides</h4>
+            <ul>
+                <li><a href="about.html">Concept</a></li>
+                <li><a href="services.html">Avantages</a></li>
+                <li><a href="contact-page.php">Contact</a></li>
+                <li><a href="#">Inscription</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Contact</h4>
+            <p>Email : <a href="mailto:contact@newonefunding.com">contact@newonefunding.com</a></p>
+            <p>Téléphone : +33 1 23 45 67 89</p>
+        </div>
+        <div class="social-icons">
+            <h4>Suivez-nous</h4>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2025 NewOneFunding. Tous droits réservés. <a href="#">Mentions légales</a></p>
+    </div>
+</footer>
 </body>
 
 </html>

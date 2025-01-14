@@ -20,7 +20,7 @@
     </ul>
     <button id="menu-toggle" aria-label="Toggle navigation">☰</button>
     <ul class="nav-links" id="nav-menu">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">Accueil</a></li>
       <li><a href="about.html">Concept</a></li>
       <li><a href="services.html">Avantages</a></li>
       <li><a href="contact-page.php" role="button">Contact</a></li>
