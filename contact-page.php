@@ -49,13 +49,13 @@
   
       <!-- Message de confirmation ou d'erreur -->
       <?php
-      if (isset($_GET["status"])) {
-          if ($_GET["status"] === "success") {
-              echo "<p style='color: green;'>Votre message a été envoyé avec succès !</p>";
-          } elseif ($_GET["status"] === "error") {
-              echo "<p style='color: red;'>Une erreur est survenue. Veuillez réessayer.</p>";
-          }
-      }
+        if (isset($_GET["status"])) {
+            if ($_GET["status"] === "success") {
+                echo "<p style='color: green;'>Votre message a été envoyé avec succès !</p>";
+            } elseif ($_GET["status"] === "error") {
+                echo "<p style='color: red;'>Une erreur est survenue. Veuillez réessayer.</p>";
+            }
+        }
       ?>
   </section>
   
