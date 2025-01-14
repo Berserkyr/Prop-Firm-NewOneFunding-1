@@ -449,21 +449,6 @@ section.grid {
   color: #ffffff;
 }
 
-.cta-button {
-  background-color: #ffffff;
-  color: #ff6f61;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-.cta-button:hover {
-  background-color: #1e1e2f;
-  color: #ffffff;
-}
-
 
 .intro-text {
   text-align: center;
