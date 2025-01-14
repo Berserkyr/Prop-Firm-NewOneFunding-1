@@ -1,21 +1,34 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
-require 'vendor/autoload.php';
+use League\OAuth2\Client\Provider\Google;
+// Charger l'autoload de Composer
+require __DIR__ . '/vendor/autoload.php';
 
 $mail = new PHPMailer(true);
 
+// Configuration OAuth 2.0
+$provider = new Google([
+    'clientId'     => '36066977164-mncf8prabos61fk3q5mocg5nelg7h2m6.apps.googleusercontent.com',
+    'clientSecret' => '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',
+    'redirectUri'  => 'http://localhost',
+]);
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
-        // Configuration SMTP avec SSL
+        // Configuration SMTP avec OAuth 2.0
         $mail->isSMTP();
-        $mail->Host = 'smtp-relay.gmail.com'; // Serveur Google Workspace
+        $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'contact@newonefunding.com'; // Votre adresse email pro
-        $mail->Password = 'Xeilos2024%'; // Votre mot de passe actuel
-        $mail->SMTPSecure = 'tls'; // Utiliser SSL au lieu de TLS
-        $mail->Port = 587; // Port SSL
+        $mail->AuthType = 'XOAUTH2';
+        $mail->Port = 587;
+        $mail->SMTPSecure = 'tls';
+
+        // Configuration de l'authentification OAuth
+        $mail->oauthUserEmail = 'contact@newonefunding.com';
+        $mail->oauthClientId = '36066977164-mncf8prabos61fk3q5mocg5nelg7h2m6.apps.googleusercontent.com';
+        $mail->oauthClientSecret = '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';
+        $mail->oauthRefreshToken = 'VOTRE_REFRESH_TOKEN';
 
         // Expéditeur et destinataire
         $mail->setFrom('contact@newonefunding.com', 'NewOneFunding');
